@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+    font-family: "Libre Baskerville", serif;
+    background: url(../img/bg-login.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+.search_box{
+  width: 50%;
+  position: relative;
+}
+
+.search_box input[type="text"]{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.3);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+
+@media screen and (max-width: 425px){
+  .search_box{
+    width: 95%;
+  }
+}
